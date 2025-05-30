@@ -1,0 +1,156 @@
+
+.newsletter-section { 
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -2; /* behind the overlay and content */
+    object-fit: cover;
+    filter: brightness(0.7) blur(2px); 
+}
+
+.newsletter-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--dark-bg-rgb, 34, 43, 54), 0.75); 
+    z-index: -1; /* between the video and the content */
+}
+
+.newsletter-section .container {
+    position: relative; 
+    z-index: 1;        
+}
+
+.newsletter__content h2 {
+    font-size: 2.8rem; 
+    font-weight: 700;
+    color: #ECF0F1;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3); 
+}
+
+.newsletter__content p { 
+    font-size: 1.1rem; 
+    color: var(--text-light-secondary);
+    line-height: 1.8;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.newsletter__input_new {
+    display: flex;
+    align-items: stretch;
+    max-width: 580px; 
+    margin: 3rem auto; 
+    background-color: rgba(var(--dark-bg-rgb, 34, 43, 54), 0.5); 
+    backdrop-filter: blur(5px); /* glass effect just like the booking bar */
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: 0.5rem;
+    border: 1px solid rgba(255,255,255,0.15); 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+}
+
+.newsletter__input_new input {
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--text-light-primary);
+    padding: 0.75rem 1.2rem; 
+    border-radius: 25px 0 0 25px;
+}
+
+.newsletter__input_new input::placeholder {
+    color: var(--text-light-secondary);
+    opacity: 0.9;
+}
+
+.newsletter__input_new input:focus {
+    outline: none;
+}
+
+.newsletter__btn_new {
+    padding: 0.75rem 1.8rem !important; 
+    background: var(--primary-blue) !important;
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    font-weight: 600;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter__btn_new:hover {
+    background: #3a7cc2 !important;
+    transform: scale(1.03); 
+}
+
+.newsletter__terms {
+    font-size: 0.85rem; 
+    color: var(--text-light-secondary);
+    opacity: 0.8; 
+}
+
+
+/*************  media queries **************/
+@media only screen and (max-width: 992px) {
+    .newsletter-section {
+        padding: 80px 0;
+    }
+    .newsletter__content h2 {
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .newsletter-section {
+        padding: 60px 0;
+    }
+    .newsletter__content h2 {
+        font-size: 2rem;
+    }
+    .newsletter__content p {
+        font-size: 1rem;
+    }
+    .newsletter__input_new {
+        flex-direction: column;
+        background-color: transparent;
+        backdrop-filter: none; 
+        -webkit-backdrop-filter: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        gap: 1rem;
+    }
+    .newsletter__input_new input {
+        border-radius: 25px !important;
+        background-color: rgba(var(--dark-bg-rgb, 34, 43, 54), 0.7);
+        border: 1px solid rgba(255,255,255,0.1);
+        text-align: center;
+    }
+    .newsletter__btn_new {
+        border-radius: 25px !important;
+        width: 100%;
+    }
+}

@@ -1,0 +1,152 @@
+.search__bar{
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    width: max-content;
+    margin: 3rem auto 0 auto;
+}
+
+.search__bar.dark-layout .form__group span i {
+    color: var(--text-light-primary); /* White icons */
+}
+.search__bar.dark-layout .form__group input {
+    color: var(--text-light-primary); /* White text */
+    background-color: transparent;
+}
+.search__bar.dark-layout .form__group input::placeholder {
+    color: var(--text-light-secondary); /* Lighter placeholder */
+    opacity: 0.8;
+}
+.search__bar.dark-layout .form__group h6 {
+    color: var(--text-light-secondary); /* Light grey labels */
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.search__bar.dark-layout .form__group-fast {
+    border-right: 1px solid rgba(var(--dark-border-rgb, 62, 80, 98), 0.4);
+    padding-right: 1rem;
+}
+.search__bar.dark-layout .search__icon i {
+    background: var(--accent-teal);
+    color: var(--dark-bg); /* Dark text on teal button */
+}
+
+/* --- Light Layout (for Tours Page) --- */
+.search-bar-section-tours { /* Wrapper section on Tours page */
+    background-color: #ffffff; /* White background for this section */
+    padding: 40px 0;
+    margin-top: -50px; /* Pulls it up slightly over the common section bottom (optional) */
+    position: relative; /* For z-index if needed */
+    z-index: 5; /* Ensure it's above common section if overlapping */
+    border-bottom: 1px solid #e9ecef;
+}
+.search__bar.light-layout {
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    background: #ffffff; /* White background for the bar itself */
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    border: 1px solid #dee2e6; /* Light border */
+    width: max-content;
+    margin: 0 auto; /* Centered */
+}
+.search__bar.light-layout .form__group span i {
+    color: var(--primary-blue); /* Theme blue for icons */
+}
+.search__bar.light-layout .form__group input {
+    color: #343a40; /* Dark text */
+    background-color: transparent;
+}
+.search__bar.light-layout .form__group input::placeholder {
+    color: #6c757d; /* Muted placeholder */
+}
+.search__bar.light-layout .form__group h6 {
+    color: #495057; /* Dark grey for labels */
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.search__bar.light-layout .form__group-fast {
+    border-right: 1px solid #ced4da; /* Standard light border */
+    padding-right: 1rem;
+}
+.search__bar.light-layout .search__icon i {
+    background: var(--accent-teal);
+    color: #fff; /* White icon on teal button */
+}
+
+/* Common styles for both layouts */
+.form__group {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.form__group span { /* Icon wrapper */
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+.form__group input {
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+.form__group input:focus {
+    outline: none;
+}
+.form__group h6 {
+    margin-bottom: 0.15rem; /* Tighten space */
+    white-space: nowrap; /* Prevent label wrapping */
+}
+.search__icon i {
+    font-size: 1.5rem; /* Slightly smaller search icon */
+    padding: 0.7rem;   /* Adjust padding */
+    border-radius: 50%; /* Round search button icon */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.search__icon i:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive styles for search bar */
+@media only screen and (max-width: 992px){
+    .search__bar {
+        width: 100%; /* Full width on tablets */
+        border-radius: 1rem; /* Less rounded on tablets */
+        padding: 1rem;
+    }
+    .search__bar.dark-layout {
+        margin-top: 2rem;
+    }
+    .search__bar form {
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center;
+        gap: 1rem; /* Gap between wrapped items */
+    }
+    .form__group-fast {
+        border-right: none !important; /* Remove internal borders when wrapped */
+    }
+    .form__group {
+        flex-basis: calc(50% - 1rem); /* Two items per row approx */
+    }
+}
+@media only screen and (max-width: 576px){
+    .search__bar form {
+        gap: 0.5rem; /* Smaller gap */
+    }
+    .form__group {
+        flex-basis: 100%; /* Stack form groups */
+        justify-content: flex-start; /* Align to left when stacked */
+        padding: 0.5rem 0;
+    }
+    .search__bar.light-layout { /* If search bar section on tours page is too tight */
+        margin-top: 0;
+    }
+    .search-bar-section-tours {
+        padding: 20px 0;
+        margin-top: -30px;
+    }
+}
