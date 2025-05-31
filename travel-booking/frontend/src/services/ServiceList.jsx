@@ -10,18 +10,18 @@ import customizationImg from '../assets/images/customization.png'
 const servicesData = [
     {
             imgUrl: weatherImg,
-            title: 'Find Out Weather',
-            desc: 'Get the latest weather updates for your travel destination.'
+            title: 'Destination Forecast',
+            desc: 'Stay informed with up-to-date weather reports for your travel location'
         },
         {
             imgUrl: guideImg,
-            title: 'Travel Guide',
-            desc: 'Find the best travel guides to help you explore new places.'
+            title: 'Explore Like a Local',
+            desc: 'Go beyond the map with curated travel guides for every explorer'
         },
         {
             imgUrl: customizationImg,
-            title: 'Customization',
-            desc: 'Customize your travel plans according to your preferences.'
+            title: 'Plan Your Way',
+            desc: 'Your travel, your rules — customize every moment.'
         },
 ]
 

@@ -18,20 +18,19 @@ const Home = () => {
         
  {/* ------------------------ HERO START -------------------- */}        
  <section className="hero-section-background">
-                {/* Background Video */}
+                
                 <video autoPlay loop muted playsInline className="hero-background-video">
                     <source src={heroVideo} type="video/mp4" />
                 </video>
 
-                {/* Overlay for better text readability (optional) */}
                 <div className="hero-overlay"></div> 
 
                 <Container> 
                     <Row className="align-items-center">
                         <Col lg="7" md="9" className="text-center"> 
                             <div className="hero__content">
-                                <h1> Traveling opens the door to creating <span 
-                                className="highlight"> memories </span></h1>
+                                <h1> Open the door to adventure <span 
+                                className="highlight"> and take home memories you'll treasure forever. </span></h1>
                                 <p>Experience the joy of seamless journeys with Travel Bliss - 
                                     your trusted companion for safe, enriching, and unforgettable 
                                     adventures around the globe!

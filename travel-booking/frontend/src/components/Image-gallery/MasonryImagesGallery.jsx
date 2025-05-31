@@ -1,20 +1,21 @@
 import galleryImages from "./galleryImages";    
-import Masonary, { ResponsiveMasonry } from "react-responsive-masonry";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import './masonaryimagesgallery.css'; 
 
 const MasonryImagesGallery = () => {
     return (
         <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 3, 992: 4}}>
-            <Masonary gutter="1rem">
+            <Masonry gutter="2.5rem"> 
                 {galleryImages.map((item, index) => (
-                    <img 
-                        className="masonry__img"
-                        src={item} 
-                        key={index} 
-                        alt="" 
-                        style={{width: "100%", display: "block", borderRadius: "10px"}}
-                    />
+                    <div className="masonry__img-container" key={index}>
+                        <img
+                            className="masonry__img"
+                            src={item}
+                            alt={`Travel gallery image ${index + 1}`}
+                            style={{ width: "100%", display: "block" }}/>
+                    </div>
                 ))}
-            </Masonary>
+            </Masonry>
         </ResponsiveMasonry>
     );
 };

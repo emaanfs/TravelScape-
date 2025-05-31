@@ -1,6 +1,3 @@
-// This component is a placeholder for the Reviews section of the application.
-// It currently returns a simple div with the text "reviews" inside it.
-import React from "react";
 import Slider from "react-slick";
 import ava01 from "../../assets/images/user-01.jpg";
 import ava02 from "../../assets/images/user-02.jpg";
@@ -63,7 +60,7 @@ const reviewData = [
             text: "Our family had the time of our lives. From booking to the actual tour, everything was seamless. The kids loved it, and we made memories that will last a lifetime. Thank you!"
         },
         {
-            img: ava04, // Reusing images for example
+            img: ava04,
             name: "Maria Rodriguez",
             role: "Weekend Explorer",
             text: "A fantastic way to spend a weekend. The tour was well-organized, hit all the key spots, and offered great value. The attention to detail was impressive."
@@ -80,11 +77,11 @@ const reviewData = [
         <>
             <Slider {...settings}>
                 {reviewData.map((item, index) => (
-                    <div className="review" key={index}> {/* Outer div for consistent spacing */}
-                        <div className="review__inner-content"> {/* Inner div if needed, or apply styles directly to .review */}
-                            {/* Optional: Add a quote icon */}
+                    <div className="review" key={index}> 
+                        <div className="review__inner-content"> 
+                            
                             <div className="review__quote-icon">
-                                <i className="ri-double-quotes-l"></i> {/* Example using Remix Icon */}
+                                <i className="ri-double-quotes-l"></i> 
                             </div>
                             <p className="review__text">{item.text}</p>
                             <div className="reviewer__info">

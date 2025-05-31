@@ -4,8 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; 
-    background-color: var(--dark-surface-bg); /* Fallback background if no video */
+    overflow: hidden;  
 }
 
 .common__section-bg-video {

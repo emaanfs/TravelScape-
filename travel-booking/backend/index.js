@@ -3,7 +3,6 @@ import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-
 import tourRoute from './routes/tours.js';
 import userRoute from './routes/users.js';
 import authRoute from './routes/auth.js';
@@ -39,7 +38,6 @@ const connect = async () => {
         console.log("Failed to connect to MongoDB");
     }
 };
-
 
 // middleware functions to handle requests
 app.use(express.json());

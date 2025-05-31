@@ -3,7 +3,6 @@
   --accent-teal: #48D1CC;
   --dark-bg: #222B36;
   --another-bg: #343A40;
-  --dark-surface-bg: #2c394b:
   --dark-border-color: #3e5062:
   --text-light-primary: #ECF0F1;   
   --text-light-secondary: #BDC3C7; 
@@ -56,7 +55,6 @@ ul {
 
 .primary__btn {
   background: var(--heading-blue) ;
-  border: none ;
   border-radius: 50px ;
   padding: 0.4rem 1.8rem ;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -70,7 +68,6 @@ ul {
 .primary__btn a {
   font-size: 1.1rem;
   text-decoration: none;
-  color: #fff !important;
 }
 
 .secondary__btn {

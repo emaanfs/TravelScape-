@@ -1,17 +1,16 @@
-
-.tour__img img{ /* styling of image and details of top tours in tour card */
+.tour__img img{ 
     width: 100%; 
     border-radius: 5px 5px 0 0;
     display: flex;
 }
 
-.card{ /* styling of card dets*/
-    border: 1px solid var(--dark-border-color) !important;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important; /* Softer, deeper shadow */
-    background-color: var(--dark-surface-bg) !important;
+.card{ 
+    /*border: 1px solid var(--dark-border-color) !important;*/
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important; 
+    /*background-color: var(--dark-surface-bg) !important;*/
     border-radius: 12px !important; /* More rounded corners */
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border-color 0.3s ease-out !important;
-    width: 100%; /* Ensure card takes full width of its Col */
+    width: 100%; 
     display: flex;
     flex-direction: column; 	
 }
@@ -23,25 +22,24 @@
 }
 
 .tour__img{
-    position: relative; /* positioning of image in tour card */
+    position: relative; 
     overflow: hidden;
 }
 
 .tour__img img {
     width: 100%;
-    height: 200px; /* Fixed height for images for consistency */
-    object-fit: cover; /* Ensures image covers the area, might crop */
-    border-radius: 11px 11px 0 0 !important; /* Match card's top radius */
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 11px 11px 0 0 !important; 
     display: block;
 }
 
-/* New "Top Tours" tag style */
-.tour__img .featured-tag { /* Change span to have class="featured-tag" in TourCard.jsx */
+.tour__img .featured-tag { 
     position: absolute;
     top: 12px;
     right: 12px;
     background-color: var(--accent-teal);
-    color: var(--dark-bg); /* Dark text on teal background for contrast */
+    color: var(--dark-bg); 
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.75rem;
@@ -50,19 +48,18 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.card-body { /* reactstrap CardBody */
-    padding: 1.5rem; /* Increased padding */
+.card-body {
+    padding: 1.5rem; 
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Allows card body to expand */
+    flex-grow: 1; 
 }
 
 .card__top {
     margin-bottom: 0.75rem;
     display: flex;
-    flex-direction: column; /* Stack location and rating */
-    gap: 0.3rem; /* Space between location and rating */
-}
+    flex-direction: column; 
+    gap: 0.3rem; }
 
 .tour__location,
 .tour__rating {
@@ -75,26 +72,25 @@
 
 .tour__location i,
 .tour__rating i {
-    font-size: 1.1rem; /* Slightly smaller icons */
+    font-size: 1.1rem; 
 }
 
 .tour__location i {
-    color: var(--accent-teal); /* Location icon in accent color */
+    color: var(--accent-teal); 
 }
 
-.tour__rating i { /* Star icon */
-    color: #FFD700; /* Gold color for stars */
+.tour__rating i { 
+    color: #FFD700; 
 }
 
 .tour__title {
-    margin-top: 0; /* Reset margin if any */
-    margin-bottom: 1rem; /* Space below title */
-    font-size: 1.2rem;  /* Slightly larger title */
+    margin-top: 0; 
+    margin-bottom: 1rem; 
+    font-size: 1.2rem; 
     font-weight: 600;
     line-height: 1.4;
-    flex-grow: 1; /* Allows title area to push price/button down */
+    flex-grow: 1; 
 }
-
 .tour__title a {
     text-decoration: none;
     color: var(--text-light-primary) !important;
@@ -106,49 +102,49 @@
 }
 
 .card__bottom {
-    margin-top: auto; /* Pushes to the bottom if .tour__title has flex-grow */
-    padding-top: 1rem; /* Space above the price/button line */
-    border-top: 1px solid var(--dark-border-color); /* Separator line */
+    margin-top: auto; 
+    padding-top: 1rem; 
+    border-top: 1px solid var(--dark-border-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.card__bottom h5 { /* Price */
+.card__bottom h5 { 
     color: var(--text-light-primary);
-    font-size: 1.25rem; /* Larger price */
+    font-size: 1.25rem; 
     font-weight: 700;
-    margin-bottom: 0; /* Reset margin */
+    margin-bottom: 0; 
 }
 
-.card__bottom h5 span { /* "/ per person" text */
+.card__bottom h5 span { 
     color: var(--text-light-secondary);
     font-size: 0.8rem;
     font-weight: 400;
 }
 
-.booking__btn { /* The button element itself */
+.booking__btn { 
     background: var(--primary-blue) !important;
     padding: 0.6rem 1.2rem !important;
-    border-radius: 25px !important; /* Rounded button */
+    border-radius: 25px !important; 
     border: none !important;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .booking__btn:hover {
-    background: #3a7cc2 !important; /* Darker shade of primary blue */
+    background: #3a7cc2 !important; 
     transform: translateY(-2px);
 }
 
-.booking__btn a { /* The Link component inside the button */
+.booking__btn a { 
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
-    color: #ffffff !important; /* Ensure text is white */
+    color: #ffffff !important; 
 }
 
 
-/* Media Queries */
-@media only screen and (max-width: 1200px) { /* For 3 cards in a row (lg="4") */
+/************** media queries ************/
+@media only screen and (max-width: 1200px) { 
     .tour__title {
         font-size: 1.1rem;
     }
@@ -163,12 +159,12 @@
     }
 }
 
-@media only screen and (max-width: 992px) { /* md breakpoint */
+@media only screen and (max-width: 992px) { 
     .tour__img img {
         height: 180px;
     }
     .tour__title {
-        font-size: 1.05rem; /* Adjust for md screens */
+        font-size: 1.05rem; 
     }
     .booking__btn a {
         font-size: 0.8rem;
@@ -184,8 +180,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) { /* sm breakpoint */
-    /* Cards will likely stack or be 2 in a row. Adjustments might be minor here if using bootstrap cols */
+@media only screen and (max-width: 768px) { 
     .tour__img img {
         height: 160px;
     }
@@ -200,7 +195,7 @@
     }
     .card__bottom {
         flex-direction: column;
-        align-items: stretch; /* Make button full width */
+        align-items: stretch; 
         gap: 0.75rem;
     }
     .card__bottom h5 {

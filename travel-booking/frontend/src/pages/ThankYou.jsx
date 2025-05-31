@@ -2,10 +2,16 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import "../styles/thank-you.css"; // CSS file for styling
+import thankyouBgVideo from "../assets/images/hero-video.mp4";
 
 const ThankYou = () => {
   return (
-    <section>
+    <section className="thankyou-section">
+       <video autoPlay loop muted playsInline className="newsletter-background-video">
+          <source src={thankyouBgVideo} type="video/mp4" />
+        </video>
+
+      <div className="thankyou-overlay"></div>
       <Container>
         <Row>
           <Col lg="12" className="pt-5 text-center">
@@ -17,7 +23,7 @@ const ThankYou = () => {
                     </svg>
                     <div class="progress-text"><i class="ri-check-line"></i></div>
                 </div>
-              {/* <span><i class="ri-checkbox-circle-line"></i></span> */}
+            
               <h1 className="mb-3 fw-semibold"> Thank You! </h1>
               <h5 className="mb-4"> Your booking has been confirmed. </h5>
 

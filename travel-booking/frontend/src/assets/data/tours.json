@@ -170,5 +170,31 @@
 
     "photo": "/tour-images/tour-paris.jpg",
     "featured": false
+  },
+  {
+    "title": "Mount Fuji, Japan",
+    "city": "Shizuoka & Yamanashi, Japan",
+    "address": "Fuji-Hakone-Izu National Park",
+    "distance": 7000 ,
+    "price": 950,
+    "maxGroupSize": 9,
+    "desc": "Mount Fuji is Japan's most iconic peak, attracting climbers, photographers, and spiritual seekers from around the world. This symmetrical volcano offers a challenging but rewarding hike, panoramic views from the summit, and a deep connection to Japanese culture and natural beauty. Whether you climb or admire it from below, Fuji leaves a lasting impression.",
+    "reviews": [],
+
+    "photo": "/tour-images/tour-japaneverest.jpg",
+    "featured": false
+  },
+  {
+    "title": "Park Güell, Barcelona, Spain",
+    "city": "Barcelona, Spain",
+    "address": "Carrer d'Olot, 08024 Barcelona",
+    "distance": 7000 ,
+    "price": 780,
+    "maxGroupSize": 9,
+    "desc": "Park Güell is a vibrant mosaic of color, nature, and architecture, designed by the legendary Antoni Gaudí. Located on Carmel Hill in Barcelona, this UNESCO World Heritage site offers whimsical structures, lush gardens, and breathtaking views of the city. A perfect mix of art and tranquility, it’s a must-see for culture lovers and explorers alike.",
+    "reviews": [],
+
+    "photo": "/tour-images/tour-spain.jpg",
+    "featured": false
   }
 ]

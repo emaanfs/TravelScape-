@@ -5,8 +5,8 @@ import "../styles/about.css";
 import Slider from "react-slick"; 
 import CommonSection from "../shared/CommonSection";
 import aboutUsHeroVideo from "../assets/images/hero-video.mp4"; 
-import whyChooseUsSliderImg1 from "../assets/images/tour-paris.jpg"; 
-import whyChooseUsSliderImg2 from "../assets/images/tour-argentina.jpg";
+import whyChooseUsSliderImg1 from "../assets/images/tour-bolivia.jpg"; 
+import whyChooseUsSliderImg2 from "../assets/images/tour-japaneverest.jpg";
 // import whyChooseUsSliderImg3 from "../assets/images/slider-image-3.jpg";
 
 const About = () => {
@@ -104,8 +104,9 @@ const About = () => {
                                     <h5 className="section-subtitle-dark">WHY CHOOSE US?</h5>
                                     <h2 className="section-title-dark">ADVENTURE AWAITS: FIND YOUR BLISS</h2>
                                     <p className="section-paragraph-dark">
-                                        Lorem ipsum dolor sit amet conseture adispisjud elit. Neecistuesary quia illum qood
-                                        persiutsjhh arum in possiym? Totajs diusnd officskj a qiuw.
+                                        Choose us for unforgettable adventures, personalized planning, 
+                                        real-time updates, and trusted guides. Discover new places with confidence, 
+                                        comfort, and convenience—your perfect journey starts right here with us.
                                     </p>
                                     <Button tag={Link} to="/about" className="btn read-more-btn-dark mt-3">
                                         READ MORE

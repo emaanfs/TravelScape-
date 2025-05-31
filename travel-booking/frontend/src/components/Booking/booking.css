@@ -31,7 +31,6 @@
 .booking__top span{
     font-size: 1.1rem;
     font-weight: 600;
-    /*color: var(--text-color);*/
 }
 
 .booking__top span i{
@@ -54,17 +53,12 @@
     font-size: 1rem;
     border: none;
     border-bottom: 1px solid rgb(122, 122, 122);
-   /* border: none; */
+   
 }
 
 .booking__form input:focus{
     outline: none;
 }
-
-/*.booking__info-form{
-    padding: 1rem;
-    border: 1px solid rgb(122, 122, 122);
-} */
 
 .booking__bottom li{
     display: flex;
@@ -76,7 +70,6 @@
     font-size: 1rem;
     color: var(--text-color);
     font-weight: 500;
-    /*font-style: italic;*/
 }
 
 .booking__bottom{
