@@ -24,7 +24,7 @@ const Tours = () => {
 
     return (
         <>
-            <CommonSection title={"All Tours"} videoSrc={allToursHeroVideo} />
+            <CommonSection title={"Explore Your Tour Options"} videoSrc={allToursHeroVideo} />
 
             <section className="search-bar-section-tours">
                 <Container>

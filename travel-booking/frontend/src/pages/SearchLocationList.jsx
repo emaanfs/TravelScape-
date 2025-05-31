@@ -13,7 +13,7 @@ const SearchLocationList = () => {
     //console.log(data);
 
     return <>
-        <CommonSection title={"Tour Search Result"} videoSrc={searchResultPageVideo} />
+        <CommonSection title={"Tour Options Found"} videoSrc={searchResultPageVideo} />
         <section>
             <Container>
                 <Row>

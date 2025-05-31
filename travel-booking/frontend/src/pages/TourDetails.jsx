@@ -70,7 +70,7 @@ const TourDetails = () => {
     return (
         <>
 
-        <CommonSection title={"Tour Search Result"} videoSrc={tourDetailsHeroVideo} />
+        <CommonSection title={"Explore Your Tour Options"} videoSrc={tourDetailsHeroVideo} />
         <section className="tour-details-section">
             <Container>
                 {loading && <h4 className="text-center pt-5"> Loading ... </h4>}
