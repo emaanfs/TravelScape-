@@ -1,0 +1,231 @@
+.hero-section-background {
+    padding: 80px 0; 
+    min-height: 100vh; 
+    position: relative; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center; 
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--dark-bg-rgb, 34, 43, 54), 0.5); 
+    z-index: -1; 
+} 
+
+.hero-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -2; 
+    object-fit: cover; 
+    background-size: cover; 
+}
+
+.hero__subtitle img{ 
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.hero__content{
+    padding-top: 0;
+    text-align: left ;
+}
+
+.hero__content h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0 , 0.5);
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.hero__content h1 .highlight{
+    color: var(--heading-color);
+}
+
+.hero__content p{
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 2rem;
+    margin: auto;
+}
+
+.hero__content{ 
+    padding-top: 3.5rem;
+}
+
+.hero__img-box{
+    padding-top: 2rem;
+}
+
+
+/************ service section ***********/
+.services__subtitle{
+    font-family: var(--font-name); 
+    font-size: 1.5rem; 
+    font-weight: 600;
+    color: var(--accent-teal); 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem; 
+}
+
+.service__title{
+    font-size: 2.8rem; 
+    font-weight: 700; 
+    color: var(--text-light-primary); 
+    margin-bottom: 3rem;
+    line-height: 1.3;
+}
+
+/************** features tours ****************/
+.featured__tour-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--text-light-primary);
+    margin-bottom: 3rem;
+    line-height: 1.3rem;
+}
+
+/**************** experience section *****************/
+.experience-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.experience__content h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-light-primary);
+    line-height: 1.3;
+}
+
+.experience__content p{
+    font-size: 1.1rem;
+    color: var(--text-light-secondary);
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+    max-width: 750px;
+}
+
+.counter__wrapper_new { 
+    margin-top: 3.5rem; 
+    gap: 2rem;
+}
+
+.counter__box_new {
+    background-color: var(--dark-surface-bg); 
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--dark-border-color);
+    min-width: 220px; 
+    flex-grow: 1; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.counter__box_new:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.counter__box_new .counter__number { 
+    display: block;
+    font-size: 3rem;      
+    font-weight: 700;
+    color: var(--accent-teal); 
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.counter__box_new .counter__text {
+    font-size: 1rem;
+    color: var(--text-light-secondary);
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+
+/************* image gallery ***************/
+.gallery__title{
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.masonry__img{
+    transition: all 0.3s ease-in-out;
+}
+
+.masonry__img:hover{
+    transform: scale(1.3);
+}
+
+/*********review section************/
+.review__title{
+    font-size: 2.8rem;
+    margin-top: 1rem;
+    margin-bottom: 3.5rem;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--text-light-primary);
+    font-weight: 700;
+}
+
+/************* media queries **************/
+@media only screen and (max-width:992px){
+    .hero__content h1{
+        font-size: 2.7rem;
+    }
+
+    .hero__img-box{
+        display: none;
+    }
+
+    .hero__video-box{
+        display: block;
+    }
+
+    .services__subtitle{
+        font-size: 1.7rem;
+    }
+
+    .services__title, .featured__tour-title,
+    .gallery__title, .review__title, .experience__content h2{
+        font-size: 2.3rem;
+    }
+
+    .experience__img{
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .hero__content h1{
+        font-size: 1.8rem;
+    }
+
+    .services__subtitle{
+        font-size: 1.5rem;
+    }
+
+    .services__title, .featured__tour-title,
+    .gallery__title, .review__title, .experience__content h2{
+        font-size: 1.8rem;
+    }
+}

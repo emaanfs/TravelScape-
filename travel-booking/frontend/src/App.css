@@ -1,0 +1,129 @@
+:root {
+  --primary-blue: #4A90E2;
+  --accent-teal: #48D1CC;
+  --dark-bg: #222B36;
+  --another-bg: #343A40;
+  --dark-surface-bg: #2c394b:
+  --dark-border-color: #3e5062:
+  --text-light-primary: #ECF0F1;   
+  --text-light-secondary: #BDC3C7; 
+ 
+  --primary-color: var(--primary-blue);    
+  --secondary-color: var(--accent-teal);   
+  --heading-color: var(--text-light-primary); 
+  --text-color: var(--text-light-secondary);     
+  --font-name: "Montserrat", sans-serif;
+  --subtitle-font-name: "Montserrat", sans-serif; 
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-name);
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+section {
+  padding: 60px 0px;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-teal);
+  transition: color 0.3s ease;
+}
+
+a:hover{
+  color: var(--primary-blue);
+}
+
+ul {
+  list-style: none;
+}
+
+.primary__btn {
+  background: var(--heading-blue) ;
+  border: none ;
+  border-radius: 50px ;
+  padding: 0.4rem 1.8rem ;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary__btn:hover {
+    background: #3a7cc2 ; 
+    transform: translateY(-2px);
+}
+
+.primary__btn a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.secondary__btn {
+  background: transparent !important;
+  color: var(--accent-teal) ;
+  border: 1px solid var(--accent-teal) !important;
+  font-weight: 500 !important;
+  border-radius: 50px !important;
+  padding: calc(0.5rem - 1px) calc(1.8rem - 1px) !important;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.secondary__btn:hover {
+    background: rgba(72, 209, 204, 0.1) !important; 
+    color: var(--primary-blue) !important;
+    border-color: var(--primary-blue) !important;
+    transform: translateY(-2px);
+}
+
+.secondary__btn a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: inherit !important; 
+}
+
+.section__subtitle { 
+  font-family: var(--subtitle-font-name);
+  font-size: 1.2rem; 
+  font-weight: 600;
+  color: var(--accent-teal);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  display: inline-block; 
+}
+
+/************* media queries **************/
+@media only screen and (max-width:992px){
+  .primary__btn a, .secondary__btn a{
+    font-size: 0.9rem;
+  }
+
+  .primary__btn, .secondary__btn, .btn-dark{
+    padding: 0.5rem 1.3rem !important;
+  }
+
+  section{
+    padding: 29px 0;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .section__subtitle{
+    font-size: 1.3rem;
+  }
+}
